@@ -1,4 +1,5 @@
 
+## Loading multiple libraries
 lib <- c("lubridate","wordcloud", "tm")
 lapply(lib, require, character.only = TRUE)
 
