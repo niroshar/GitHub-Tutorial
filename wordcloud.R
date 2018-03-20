@@ -48,7 +48,7 @@ ord.matrix <- sort(rowSums(t.matrix),decreasing=TRUE)
 df <- data.frame(word = names(ord.matrix),freq=ord.matrix)
 
 
-## Create the wordcloud
+## Creating wordcloud and saving
 set.seed(1)
 png("word_cloud.png")
 wordcloud(words = df$word, freq = df$freq, scale=c(4,0.5), min.freq = 3,
