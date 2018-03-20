@@ -50,10 +50,11 @@ df <- data.frame(word = names(ord.matrix),freq=ord.matrix)
 
 ## Create the wordcloud
 set.seed(1)
+png("word_cloud.png")
 wordcloud(words = df$word, freq = df$freq, scale=c(4,0.5), min.freq = 3,
           max.words=150, random.order=FALSE, rot.per=0.25, 
           colors=brewer.pal(8, "Dark2"))
-
+dev.off()
 ## Display first 15 words by frequency
 head(df, 15)
 
