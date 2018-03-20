@@ -58,4 +58,4 @@ wordcloud(words = df$word, freq = df$freq, scale=c(4,0.5), min.freq = 3,
 head(df, 15)
 
 ## Bar chart of the frequency considering top 15 
-barplot(df[1:15,]$freq, las =2, names.arg = df[1:15,]$freq, col="blue", main="Bar chart of words", ylab="word frequencies")
+barplot(df[1:15,]$freq, las =2, names.arg = df[1:15,]$freq, col="blue", main="Bar chart of words", ylab="frequency of words")
